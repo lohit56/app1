@@ -48,11 +48,7 @@ const  appPath = path.join(__dirname, '..','dist');
 app.use(express.static(appPath));
 
 
-app.use('*',(req, res)=>{
 
-  res.sendFile(path.resolve(appPath,'index.html'))
-
-});
 
 
 
