@@ -5,7 +5,7 @@ const FakeDb = require("./fakedb");
 const placesRoutes = require('./routes/places');
 
 
-
+const path = require('path');
 
 
 if (process.env.NODE_ENV ==='production'){
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV ==='production'){
 
 
 
-const path = require('path');
+
 
 
 const mongoose = require('mongoose');
