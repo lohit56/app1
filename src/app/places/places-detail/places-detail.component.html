@@ -1,0 +1,64 @@
+
+  <!--<div class="container">-->
+      <!--<div class="row justify-content-center">-->
+          <!--<div class="col-lg-9">-->
+
+            <!--<article>-->
+
+                      <!--&lt;!&ndash;&lt;!&ndash; Topic header &ndash;&gt;&ndash;&gt;-->
+                      <!--&lt;!&ndash;<h2 class="h2 mb-2">{{place?.name}}</h2>&ndash;&gt;-->
+              <!--<h2 class="h2 mb-2">{{place?.name}}</h2>-->
+              <!--<p>{{place.description}}</p>-->
+              <!--<app-map [location]="place.location"></app-map>-->
+                      <!--&lt;!&ndash;&lt;!&ndash; Topic body &ndash;&gt;&ndash;&gt;-->
+                      <!--&lt;!&ndash;<article class="mt-5">&ndash;&gt;-->
+
+
+                        <!--&lt;!&ndash;<figure class="figure">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<img alt="Image placeholder" src="{{place?.image}}" class="img-fluid rounded">&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
+
+
+                        <!--&lt;!&ndash;<figure class="figure">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<app-map [location]="place.location"></app-map>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</figure>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<p>{{place.description}}</p>&ndash;&gt;-->
+
+
+
+
+
+
+
+
+                      <!--</article>-->
+                  <!--</div>-->
+
+
+
+      <!--</div>-->
+  <!--</div>-->
+
+  <section class="slice" id="sct-article">
+
+  <div class="container ">
+
+      <div><h3>{{place?.name}}</h3></div>
+
+      <div><p>{{place?.description}}</p></div>
+
+
+    <div class="row">
+   <div class="col-md-6">
+     <img alt="Image placeholder" src="{{place?.image}}" class="img-fluid rounded">
+
+  </div>
+    <div class="col-md-6 img-fluid">
+      <app-map [location]="place.location"></app-map>
+
+    </div>
+ </div>
+
+  </div>
+</section>
