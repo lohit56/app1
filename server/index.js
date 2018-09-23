@@ -9,6 +9,25 @@ const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 
+mongoose.connect(config.DB_URI).then( ()=> {
+    const fd =  new FakeDb();
+    fd.seedDb();
+    console.log("created");
+
+    });
+
+
+
+
+
+
+app.use('/api/v1/places',placesRoutes);
+
+
+
+
+
+
 
 
 
@@ -32,23 +51,6 @@ if (process.env.NODE_ENV ==='production'){
 
 
 
-
-
-
-mongoose.connect(config.DB_URI).then( ()=> {
-    const fd =  new FakeDb();
-    fd.seedDb();
-    console.log("created");
-
-    });
-
-
-
-app.use('/api/v1/places',placesRoutes);
-
-const  appPath = path.join(__dirname, '..','dist');
-
-app.use(express.static(appPath));
 
 
 
