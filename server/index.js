@@ -6,7 +6,6 @@ const placesRoutes = require('./routes/places');
 const path = require('path');
 
 
-const path = require('path');
 
 
 if (process.env.NODE_ENV ==='production'){
