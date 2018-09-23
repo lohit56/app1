@@ -6,6 +6,10 @@ const placesRoutes = require('./routes/places');
 const path = require('path');
 
 
+const app = express();
+const mongoose = require('mongoose');
+
+
 
 
 if (process.env.NODE_ENV ==='production'){
@@ -28,7 +32,7 @@ if (process.env.NODE_ENV ==='production'){
 
 
 
-const mongoose = require('mongoose');
+
 
 
 mongoose.connect(config.DB_URI).then( ()=> {
@@ -38,7 +42,6 @@ mongoose.connect(config.DB_URI).then( ()=> {
 
     });
 
-const app = express();
 
 
 app.use('/api/v1/places',placesRoutes);
